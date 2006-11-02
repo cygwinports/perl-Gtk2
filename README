@@ -5,21 +5,21 @@ library.  This module allows you to write graphical user interfaces in
 a perlish and object-oriented way.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  atk-1.10.3-1
-  gtk2-x11-2.8.17-1
-  pango-1.10.4-1
+  cygwin-1.5.21-2
+  atk-1.12.3-1
+  gtk2-x11-2.10.6-1
+  pango-1.14.7-1
   perl-5.8.7-5
-  perl-Cairo-0.03-1
-  perl-Glib-1.120-1
+  perl-Cairo-1.01-2
+  perl-Glib-1.140-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  binutils-20050610-1
-  cygport-0.1.93-1
+  cygwin-1.5.21-2
+  binutils-20060817-1
+  cygport-0.2.6-1
   gcc-core-3.4.4-1
-  make-3.80-1
+  make-3.81-1
   perl-5.8.7-5
   perl-ExtUtils-Depends-0.205-1
   perl-ExtUtils-PkgConfig-1.07-1
@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.122-X-src.tar.bz2
+  unpack perl-Gtk2-1.140-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.122-X.cygport all
+  cygport ./perl-Gtk2-1.140-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.122-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.122-X.tar.bz2
+  /usr/src/perl-Gtk2-1.140-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.140-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,6 +49,7 @@ Files included in the binary package:
 
   /etc/postinstall/perl-Gtk2.sh
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2.pm
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/AboutDialog.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/AccelGroup.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/AccelLabel.pod
@@ -60,6 +61,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Alignment.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Arrow.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/AspectFrame.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Assistant.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Bin.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Box.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Button.pod
@@ -68,9 +70,11 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellEditable.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellLayout.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRenderer.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererAccel.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererCombo.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererPixbuf.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererProgress.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererSpin.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererText.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellRendererToggle.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/CellView.pod
@@ -194,6 +198,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/ItemFactory.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Label.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Layout.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/LinkButton.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/List.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/ListItem.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/ListStore.pod
@@ -207,6 +212,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Notebook.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Object.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/OptionMenu.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PageSetup.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Paned.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Pango.pm
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Pango.pod
@@ -231,7 +237,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Pango/ScriptIter.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Pango/TabArray.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Pango/version.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PaperSize.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Plug.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Print.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PrintContext.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PrintOperation.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PrintOperationPreview.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/PrintSettings.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/ProgressBar.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RadioAction.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RadioButton.pod
@@ -240,6 +252,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Range.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Rc.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RcStyle.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentChooser.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentChooserDialog.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentChooserMenu.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentChooserWidget.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentFilter.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentInfo.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/RecentManager.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Requisition.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Ruler.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Scale.pod
@@ -255,6 +274,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/SizeGroup.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Socket.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/SpinButton.pod
+  /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/StatusIcon.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Statusbar.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Stock.pod
   /usr/lib/perl5/vendor_perl/5.8/cygwin/Gtk2/Style.pod
@@ -314,13 +334,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/libGtk2.dll.a
-  /usr/share/doc/Cygwin/perl-Gtk2-1.122.README
-  /usr/share/doc/perl-Gtk2-1.122/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.122/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.122/LICENSE
-  /usr/share/doc/perl-Gtk2-1.122/NEWS
-  /usr/share/doc/perl-Gtk2-1.122/README
-  /usr/share/doc/perl-Gtk2-1.122/TODO
+  /usr/share/doc/Cygwin/perl-Gtk2-1.140.README
+  /usr/share/doc/perl-Gtk2-1.140/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.140/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.140/LICENSE
+  /usr/share/doc/perl-Gtk2-1.140/NEWS
+  /usr/share/doc/perl-Gtk2-1.140/README
+  /usr/share/doc/perl-Gtk2-1.140/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -333,6 +353,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Alignment.3pm.gz
   /usr/share/man/man3/Gtk2.Arrow.3pm.gz
   /usr/share/man/man3/Gtk2.AspectFrame.3pm.gz
+  /usr/share/man/man3/Gtk2.Assistant.3pm.gz
   /usr/share/man/man3/Gtk2.Bin.3pm.gz
   /usr/share/man/man3/Gtk2.Box.3pm.gz
   /usr/share/man/man3/Gtk2.Button.3pm.gz
@@ -341,9 +362,11 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.CellEditable.3pm.gz
   /usr/share/man/man3/Gtk2.CellLayout.3pm.gz
   /usr/share/man/man3/Gtk2.CellRenderer.3pm.gz
+  /usr/share/man/man3/Gtk2.CellRendererAccel.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererCombo.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererPixbuf.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererProgress.3pm.gz
+  /usr/share/man/man3/Gtk2.CellRendererSpin.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererText.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererToggle.3pm.gz
   /usr/share/man/man3/Gtk2.CellView.3pm.gz
@@ -455,6 +478,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.ItemFactory.3pm.gz
   /usr/share/man/man3/Gtk2.Label.3pm.gz
   /usr/share/man/man3/Gtk2.Layout.3pm.gz
+  /usr/share/man/man3/Gtk2.LinkButton.3pm.gz
   /usr/share/man/man3/Gtk2.List.3pm.gz
   /usr/share/man/man3/Gtk2.ListItem.3pm.gz
   /usr/share/man/man3/Gtk2.ListStore.3pm.gz
@@ -468,6 +492,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Notebook.3pm.gz
   /usr/share/man/man3/Gtk2.Object.3pm.gz
   /usr/share/man/man3/Gtk2.OptionMenu.3pm.gz
+  /usr/share/man/man3/Gtk2.PageSetup.3pm.gz
   /usr/share/man/man3/Gtk2.Paned.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.AttrList.3pm.gz
@@ -491,7 +516,13 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Pango.ScriptIter.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.TabArray.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.version.3pm.gz
+  /usr/share/man/man3/Gtk2.PaperSize.3pm.gz
   /usr/share/man/man3/Gtk2.Plug.3pm.gz
+  /usr/share/man/man3/Gtk2.Print.3pm.gz
+  /usr/share/man/man3/Gtk2.PrintContext.3pm.gz
+  /usr/share/man/man3/Gtk2.PrintOperation.3pm.gz
+  /usr/share/man/man3/Gtk2.PrintOperationPreview.3pm.gz
+  /usr/share/man/man3/Gtk2.PrintSettings.3pm.gz
   /usr/share/man/man3/Gtk2.ProgressBar.3pm.gz
   /usr/share/man/man3/Gtk2.RadioAction.3pm.gz
   /usr/share/man/man3/Gtk2.RadioButton.3pm.gz
@@ -500,6 +531,13 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Range.3pm.gz
   /usr/share/man/man3/Gtk2.Rc.3pm.gz
   /usr/share/man/man3/Gtk2.RcStyle.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentChooser.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentChooserDialog.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentChooserMenu.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentChooserWidget.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentFilter.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentInfo.3pm.gz
+  /usr/share/man/man3/Gtk2.RecentManager.3pm.gz
   /usr/share/man/man3/Gtk2.Requisition.3pm.gz
   /usr/share/man/man3/Gtk2.Ruler.3pm.gz
   /usr/share/man/man3/Gtk2.Scale.3pm.gz
@@ -513,6 +551,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.SizeGroup.3pm.gz
   /usr/share/man/man3/Gtk2.Socket.3pm.gz
   /usr/share/man/man3/Gtk2.SpinButton.3pm.gz
+  /usr/share/man/man3/Gtk2.StatusIcon.3pm.gz
   /usr/share/man/man3/Gtk2.Statusbar.3pm.gz
   /usr/share/man/man3/Gtk2.Stock.3pm.gz
   /usr/share/man/man3/Gtk2.Style.3pm.gz
@@ -572,6 +611,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.140-1 -----
+Version bump for gtk+-2.10.
 
 ----- version 1.122-1 -----
 Version bump.
