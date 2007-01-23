@@ -5,20 +5,20 @@ library.  This module allows you to write graphical user interfaces in
 a perlish and object-oriented way.
 
 Runtime requirements:
-  cygwin-1.5.22-1
+  cygwin-1.5.23-2
   atk-1.12.3-1
-  gtk2-x11-2.10.6-1
-  pango-1.14.7-1
+  gtk2-x11-2.10.8-1
+  pango-1.14.9-1
   perl-5.8.7-5
-  perl-Cairo-1.01-2
+  perl-Cairo-1.022-1
   perl-Glib-1.141-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.22-1
+  cygwin-1.5.23-2
   binutils-20060817-1
-  cygport-0.2.7-1
-  gcc-core-3.4.4-1
+  cygport-0.2.9-1
+  gcc-core-3.4.4-3
   make-3.81-1
   perl-5.8.7-5
   perl-ExtUtils-Depends-0.205-1
@@ -28,20 +28,20 @@ Canonical homepage:
   http://gtk2-perl.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/gtk2-perl/
+  http://downloads.sourceforge.net/gtk2-perl/
 
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.141-X-src.tar.bz2
+  unpack perl-Gtk2-1.142-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.141-X.cygport all
+  cygport ./perl-Gtk2-1.142-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.141-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.141-X.tar.bz2
+  /usr/src/perl-Gtk2-1.142-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.142-X.tar.bz2
 
 -------------------------------------------
 
@@ -334,13 +334,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/libGtk2.dll.a
-  /usr/share/doc/Cygwin/perl-Gtk2-1.141.README
-  /usr/share/doc/perl-Gtk2-1.141/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.141/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.141/LICENSE
-  /usr/share/doc/perl-Gtk2-1.141/NEWS
-  /usr/share/doc/perl-Gtk2-1.141/README
-  /usr/share/doc/perl-Gtk2-1.141/TODO
+  /usr/share/doc/Cygwin/perl-Gtk2-1.142.README
+  /usr/share/doc/perl-Gtk2-1.142/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.142/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.142/LICENSE
+  /usr/share/doc/perl-Gtk2-1.142/NEWS
+  /usr/share/doc/perl-Gtk2-1.142/README
+  /usr/share/doc/perl-Gtk2-1.142/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -611,6 +611,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.142-1 -----
+Version bump.
 
 ----- version 1.141-1 -----
 Version bump.
