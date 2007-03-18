@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.143-X-src.tar.bz2
+  unpack perl-Gtk2-1.144-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.143-X.cygport all
+  cygport ./perl-Gtk2-1.144-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.143-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.143-X.tar.bz2
+  /usr/src/perl-Gtk2-1.144-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.144-X.tar.bz2
 
 -------------------------------------------
 
@@ -334,13 +334,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.bs
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/Gtk2.dll
   /usr/lib/perl5/vendor_perl/5.8/cygwin/auto/Gtk2/libGtk2.dll.a
-  /usr/share/doc/Cygwin/perl-Gtk2-1.143.README
-  /usr/share/doc/perl-Gtk2-1.143/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.143/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.143/LICENSE
-  /usr/share/doc/perl-Gtk2-1.143/NEWS
-  /usr/share/doc/perl-Gtk2-1.143/README
-  /usr/share/doc/perl-Gtk2-1.143/TODO
+  /usr/share/doc/Cygwin/perl-Gtk2-1.144.README
+  /usr/share/doc/perl-Gtk2-1.144/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.144/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.144/LICENSE
+  /usr/share/doc/perl-Gtk2-1.144/NEWS
+  /usr/share/doc/perl-Gtk2-1.144/README
+  /usr/share/doc/perl-Gtk2-1.144/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -612,7 +612,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.143-1 -----
+----- version 1.144-1 -----
 Version bump.
 
 ----- version 1.142-1 -----
