@@ -13,7 +13,7 @@ Runtime requirements:
   pango-1.18.4-1
   perl-5.10.0-3
   perl-Cairo-1.045-1
-  perl-Glib-1.164-1
+  perl-Glib-1.182-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -21,7 +21,7 @@ Build requirements:
   cygport-0.3.9-1
   gcc-core-3.4.4-3
   make-3.81-1
-  perl-ExtUtils-Depends-0.205-2
+  perl-ExtUtils-Depends-0.300-1
   perl-ExtUtils-PkgConfig-1.10-1
 
 Canonical homepage:
@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.164-X-src.tar.bz2
+  unpack perl-Gtk2-1.182-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.164-X.cygport all
+  cygport ./perl-Gtk2-1.182-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.164-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.164-X.tar.bz2
+  /usr/src/perl-Gtk2-1.182-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.182-X.tar.bz2
 
 -------------------------------------------
 
@@ -63,12 +63,14 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Bin.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Box.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Buildable.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Buildable/ParseContext.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Builder.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Button.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ButtonBox.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Calendar.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellEditable.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellLayout.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellLayout/DataFunc.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellRenderer.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellRendererAccel.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/CellRendererCombo.pod
@@ -177,6 +179,9 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/HSeparator.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/HandleBox.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Helper.pm
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IMContext.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IMContextSimple.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IMMulticontext.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IconFactory.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IconInfo.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/IconSet.pod
@@ -362,16 +367,18 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/WindowGroup.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/api.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/devel.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/enums.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/index.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/main.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/version.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/.packlist
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Gtk2.dll
-  /usr/share/doc/perl-Gtk2-1.164/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.164/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.164/LICENSE
-  /usr/share/doc/perl-Gtk2-1.164/NEWS
-  /usr/share/doc/perl-Gtk2-1.164/README
-  /usr/share/doc/perl-Gtk2-1.164/TODO
+  /usr/share/doc/perl-Gtk2-1.182/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.182/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.182/LICENSE
+  /usr/share/doc/perl-Gtk2-1.182/NEWS
+  /usr/share/doc/perl-Gtk2-1.182/README
+  /usr/share/doc/perl-Gtk2-1.182/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -388,12 +395,14 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Bin.3pm.gz
   /usr/share/man/man3/Gtk2.Box.3pm.gz
   /usr/share/man/man3/Gtk2.Buildable.3pm.gz
+  /usr/share/man/man3/Gtk2.Buildable.ParseContext.3pm.gz
   /usr/share/man/man3/Gtk2.Builder.3pm.gz
   /usr/share/man/man3/Gtk2.Button.3pm.gz
   /usr/share/man/man3/Gtk2.ButtonBox.3pm.gz
   /usr/share/man/man3/Gtk2.Calendar.3pm.gz
   /usr/share/man/man3/Gtk2.CellEditable.3pm.gz
   /usr/share/man/man3/Gtk2.CellLayout.3pm.gz
+  /usr/share/man/man3/Gtk2.CellLayout.DataFunc.3pm.gz
   /usr/share/man/man3/Gtk2.CellRenderer.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererAccel.3pm.gz
   /usr/share/man/man3/Gtk2.CellRendererCombo.3pm.gz
@@ -499,6 +508,9 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.HScrollbar.3pm.gz
   /usr/share/man/man3/Gtk2.HSeparator.3pm.gz
   /usr/share/man/man3/Gtk2.HandleBox.3pm.gz
+  /usr/share/man/man3/Gtk2.IMContext.3pm.gz
+  /usr/share/man/man3/Gtk2.IMContextSimple.3pm.gz
+  /usr/share/man/man3/Gtk2.IMMulticontext.3pm.gz
   /usr/share/man/man3/Gtk2.IconFactory.3pm.gz
   /usr/share/man/man3/Gtk2.IconInfo.3pm.gz
   /usr/share/man/man3/Gtk2.IconSet.3pm.gz
@@ -671,6 +683,8 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.WindowGroup.3pm.gz
   /usr/share/man/man3/Gtk2.api.3pm.gz
   /usr/share/man/man3/Gtk2.devel.3pm.gz
+  /usr/share/man/man3/Gtk2.enums.3pm.gz
+  /usr/share/man/man3/Gtk2.index.3pm.gz
   /usr/share/man/man3/Gtk2.main.3pm.gz
   /usr/share/man/man3/Gtk2.version.3pm.gz
 
@@ -678,7 +692,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.164-1 -----
+----- version 1.182-1 -----
 Version bump, built for perl-5.10.
 
 ----- version 1.162-1 -----
