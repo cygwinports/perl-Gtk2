@@ -5,20 +5,20 @@ library.  This module allows you to write graphical user interfaces in
 a perlish and object-oriented way.
 
 Runtime requirements:
-  cygwin-1.5.25-7
-  atk-1.20.0-1
-  glib2-2.14.6-1
-  gtk2-x11-2.12.7-1
-  libcairo2-1.4.14-1
-  pango-1.18.4-1
+  cygwin-1.5.25-11
+  atk-1.22.0-1
+  glib2-2.16.3-1
+  gtk2-x11-2.12.9-1
+  libcairo2-1.6.4-1
+  pango-1.20.3-1
   perl-5.10.0-3
-  perl-Cairo-1.045-1
-  perl-Glib-1.182-1
+  perl-Cairo-1.060-1
+  perl-Glib-1.183-1
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20060817-1
-  cygport-0.3.9-1
+  cygport-0.3.11-1
   gcc-core-3.4.4-3
   make-3.81-1
   perl-ExtUtils-Depends-0.300-1
@@ -33,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.182-X-src.tar.bz2
+  unpack perl-Gtk2-1.183-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.182-X.cygport all
+  cygport ./perl-Gtk2-1.183-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.182-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.182-X.tar.bz2
+  /usr/src/perl-Gtk2-1.183-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.183-X.tar.bz2
 
 -------------------------------------------
 
@@ -373,12 +373,12 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/version.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/.packlist
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Gtk2.dll
-  /usr/share/doc/perl-Gtk2-1.182/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.182/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.182/LICENSE
-  /usr/share/doc/perl-Gtk2-1.182/NEWS
-  /usr/share/doc/perl-Gtk2-1.182/README
-  /usr/share/doc/perl-Gtk2-1.182/TODO
+  /usr/share/doc/perl-Gtk2-1.183/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.183/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.183/LICENSE
+  /usr/share/doc/perl-Gtk2-1.183/NEWS
+  /usr/share/doc/perl-Gtk2-1.183/README
+  /usr/share/doc/perl-Gtk2-1.183/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -691,6 +691,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.183-1 -----
+Version bump.
 
 ----- version 1.182-1 -----
 Version bump, built for perl-5.10.
