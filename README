@@ -5,24 +5,25 @@ library.  This module allows you to write graphical user interfaces in
 a perlish and object-oriented way.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  atk-1.22.0-1
-  glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
-  libcairo2-1.6.4-1
-  pango-1.20.3-1
-  perl-5.10.0-3
+  cygwin-1.5.25-15
+  libatk1.0_0-1.24.0-1
+  libcairo2-1.8.4-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.5-1
+  libpango1.0_0-1.22.3-1
+  perl-5.10.0-5
   perl-Cairo-1.060-1
-  perl-Glib-1.183-1
+  perl-Glib-1.200-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-20060817-1
-  cygport-0.3.11-1
+  binutils-20080624-2
+  cygport-0.4.2-1
   gcc-core-3.4.4-3
   make-3.81-1
-  perl-ExtUtils-Depends-0.300-1
-  perl-ExtUtils-PkgConfig-1.10-1
+  perl-ExtUtils-Depends-0.301-1
+  perl-ExtUtils-PkgConfig-1.12-1
 
 Canonical homepage:
   http://gtk2-perl.sourceforge.net/
@@ -33,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.183-X-src.tar.bz2
+  unpack perl-Gtk2-1.202-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.183-X.cygport all
+  cygport ./perl-Gtk2-1.202-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.183-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.183-X.tar.bz2
+  /usr/src/perl-Gtk2-1.202-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.202-X.tar.bz2
 
 -------------------------------------------
 
@@ -335,6 +336,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ToggleToolButton.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ToolButton.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ToolItem.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ToolShell.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Toolbar.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Tooltip.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Tooltips.pod
@@ -373,12 +375,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/version.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/.packlist
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Gtk2.dll
-  /usr/share/doc/perl-Gtk2-1.183/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.183/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.183/LICENSE
-  /usr/share/doc/perl-Gtk2-1.183/NEWS
-  /usr/share/doc/perl-Gtk2-1.183/README
-  /usr/share/doc/perl-Gtk2-1.183/TODO
+  /usr/share/doc/perl-Gtk2-1.202/AUTHORS
+  /usr/share/doc/perl-Gtk2-1.202/ChangeLog
+  /usr/share/doc/perl-Gtk2-1.202/LICENSE
+  /usr/share/doc/perl-Gtk2-1.202/MAINTAINERS
+  /usr/share/doc/perl-Gtk2-1.202/NEWS
+  /usr/share/doc/perl-Gtk2-1.202/README
+  /usr/share/doc/perl-Gtk2-1.202/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -415,6 +418,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.CheckButton.3pm.gz
   /usr/share/man/man3/Gtk2.CheckMenuItem.3pm.gz
   /usr/share/man/man3/Gtk2.Clipboard.3pm.gz
+  /usr/share/man/man3/Gtk2.CodeGen.3pm.gz
   /usr/share/man/man3/Gtk2.ColorButton.3pm.gz
   /usr/share/man/man3/Gtk2.ColorSelection.3pm.gz
   /usr/share/man/man3/Gtk2.ColorSelectionDialog.3pm.gz
@@ -480,6 +484,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Gdk.Geometry.3pm.gz
   /usr/share/man/man3/Gtk2.Gdk.Input.3pm.gz
   /usr/share/man/man3/Gtk2.Gdk.Keymap.3pm.gz
+  /usr/share/man/man3/Gtk2.Gdk.Keysyms.3pm.gz
   /usr/share/man/man3/Gtk2.Gdk.Pango.AttrEmbossColor.3pm.gz
   /usr/share/man/man3/Gtk2.Gdk.Pango.AttrEmbossed.3pm.gz
   /usr/share/man/man3/Gtk2.Gdk.Pango.AttrStipple.3pm.gz
@@ -508,6 +513,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.HScrollbar.3pm.gz
   /usr/share/man/man3/Gtk2.HSeparator.3pm.gz
   /usr/share/man/man3/Gtk2.HandleBox.3pm.gz
+  /usr/share/man/man3/Gtk2.Helper.3pm.gz
   /usr/share/man/man3/Gtk2.IMContext.3pm.gz
   /usr/share/man/man3/Gtk2.IMContextSimple.3pm.gz
   /usr/share/man/man3/Gtk2.IMMulticontext.3pm.gz
@@ -542,6 +548,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.OptionMenu.3pm.gz
   /usr/share/man/man3/Gtk2.PageSetup.3pm.gz
   /usr/share/man/man3/Gtk2.Paned.3pm.gz
+  /usr/share/man/man3/Gtk2.Pango.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.AttrBackground.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.AttrColor.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.AttrFallback.3pm.gz
@@ -627,6 +634,8 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Separator.3pm.gz
   /usr/share/man/man3/Gtk2.SeparatorMenuItem.3pm.gz
   /usr/share/man/man3/Gtk2.SeparatorToolItem.3pm.gz
+  /usr/share/man/man3/Gtk2.SimpleList.3pm.gz
+  /usr/share/man/man3/Gtk2.SimpleMenu.3pm.gz
   /usr/share/man/man3/Gtk2.SizeGroup.3pm.gz
   /usr/share/man/man3/Gtk2.Socket.3pm.gz
   /usr/share/man/man3/Gtk2.SpinButton.3pm.gz
@@ -651,6 +660,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.ToggleToolButton.3pm.gz
   /usr/share/man/man3/Gtk2.ToolButton.3pm.gz
   /usr/share/man/man3/Gtk2.ToolItem.3pm.gz
+  /usr/share/man/man3/Gtk2.ToolShell.3pm.gz
   /usr/share/man/man3/Gtk2.Toolbar.3pm.gz
   /usr/share/man/man3/Gtk2.Tooltip.3pm.gz
   /usr/share/man/man3/Gtk2.Tooltips.3pm.gz
@@ -691,6 +701,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.202-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 1.183-1 -----
 Version bump.
