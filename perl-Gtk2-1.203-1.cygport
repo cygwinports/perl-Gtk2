@@ -1,4 +1,0 @@
-inherit gtk2-perl
-
-# case insensitivity
-MAKEOPTS+=" OTHERLDFLAGS=/usr/lib/libcairo.dll.a"

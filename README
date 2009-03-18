@@ -5,22 +5,24 @@ library.  This module allows you to write graphical user interfaces in
 a perlish and object-oriented way.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libcairo2-1.8.6-1
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libpango1.0_0-1.22.4-1
+  cygwin-1.7.0-43
+  libatk1.0_0-1.26.0-1
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libpango1.0_0-1.24.0-1
   perl-5.10.0-5
-  perl-Cairo-1.060-1
-  perl-Glib-1.201-1
+  perl-Cairo-1.060-10
+  perl-Glib-1.220-1
+  perl-Pango-1.220-1
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
   make-3.81-2
   perl-ExtUtils-Depends-0.301-1
   perl-ExtUtils-PkgConfig-1.12-1
@@ -34,15 +36,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack perl-Gtk2-1.203-X-src.tar.bz2
+  unpack perl-Gtk2-1.220-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./perl-Gtk2-1.203-X.cygport all
+  cygport ./perl-Gtk2-1.220-X.cygport all
 
 This will create:
-  /usr/src/perl-Gtk2-1.203-X-src.tar.bz2
-  /usr/src/perl-Gtk2-1.203-X.tar.bz2
+  /usr/src/perl-Gtk2-1.220-X-src.tar.bz2
+  /usr/src/perl-Gtk2-1.220-X.tar.bz2
 
 -------------------------------------------
 
@@ -62,6 +64,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/AspectFrame.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Assistant.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Bin.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/BindingSet.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Box.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Buildable.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Buildable/ParseContext.pod
@@ -201,7 +204,6 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Install/gtk2perl-versions.h
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Install/gtk2perl.h
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Install/gtk2perl.typemap
-  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Install/pango.typemap
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Invisible.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Item.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/ItemFactory.pod
@@ -221,6 +223,7 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Notebook.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Object.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/OptionMenu.pod
+  /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Orientable.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/PageSetup.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Paned.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/Pango.pm
@@ -375,13 +378,13 @@ Files included in the binary package:
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/Gtk2/version.pod
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/.packlist
   /usr/lib/perl5/vendor_perl/5.10/i686-cygwin/auto/Gtk2/Gtk2.dll
-  /usr/share/doc/perl-Gtk2-1.203/AUTHORS
-  /usr/share/doc/perl-Gtk2-1.203/ChangeLog
-  /usr/share/doc/perl-Gtk2-1.203/LICENSE
-  /usr/share/doc/perl-Gtk2-1.203/MAINTAINERS
-  /usr/share/doc/perl-Gtk2-1.203/NEWS
-  /usr/share/doc/perl-Gtk2-1.203/README
-  /usr/share/doc/perl-Gtk2-1.203/TODO
+  /usr/share/doc/perl-Gtk2/AUTHORS
+  /usr/share/doc/perl-Gtk2/ChangeLog
+  /usr/share/doc/perl-Gtk2/LICENSE
+  /usr/share/doc/perl-Gtk2/MAINTAINERS
+  /usr/share/doc/perl-Gtk2/NEWS
+  /usr/share/doc/perl-Gtk2/README
+  /usr/share/doc/perl-Gtk2/TODO
   /usr/share/man/man3/Gtk2.3pm.gz
   /usr/share/man/man3/Gtk2.AboutDialog.3pm.gz
   /usr/share/man/man3/Gtk2.AccelGroup.3pm.gz
@@ -396,6 +399,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.AspectFrame.3pm.gz
   /usr/share/man/man3/Gtk2.Assistant.3pm.gz
   /usr/share/man/man3/Gtk2.Bin.3pm.gz
+  /usr/share/man/man3/Gtk2.BindingSet.3pm.gz
   /usr/share/man/man3/Gtk2.Box.3pm.gz
   /usr/share/man/man3/Gtk2.Buildable.3pm.gz
   /usr/share/man/man3/Gtk2.Buildable.ParseContext.3pm.gz
@@ -546,6 +550,7 @@ Files included in the binary package:
   /usr/share/man/man3/Gtk2.Notebook.3pm.gz
   /usr/share/man/man3/Gtk2.Object.3pm.gz
   /usr/share/man/man3/Gtk2.OptionMenu.3pm.gz
+  /usr/share/man/man3/Gtk2.Orientable.3pm.gz
   /usr/share/man/man3/Gtk2.PageSetup.3pm.gz
   /usr/share/man/man3/Gtk2.Paned.3pm.gz
   /usr/share/man/man3/Gtk2.Pango.3pm.gz
@@ -702,72 +707,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.203-1 -----
-Version bump.
-
------ version 1.202-1 -----
-Version bump for GNOME 2.24.
-
------ version 1.183-1 -----
-Version bump.
-
------ version 1.182-1 -----
-Version bump, built for perl-5.10.
-
------ version 1.162-1 -----
-Version bump for GNOME 2.20.
-
------ version 1.146-1 -----
-Version bump.
-
------ version 1.145-1 -----
-Version bump.
-
------ version 1.144-1 -----
-Version bump.
-
------ version 1.142-1 -----
-Version bump.
-
------ version 1.141-1 -----
-Version bump.
-
------ version 1.140-1 -----
-Version bump for gtk+-2.10.
-
------ version 1.122-1 -----
-Version bump.
-
------ version 1.120-1 -----
-Version bump, built for gtk+-2.8 with perl-Cairo support.
-Source package is now cygport driven.
-
------ version 1.104-1 -----
-Version bump.
-
------ version 1.103-1 -----
-Version bump.
-
------ version 1.102-1 -----
-Version bump.
-
------ version 1.100-1 -----
-New upstream version for GNOME 2.12.
-
------ version 1.083-1 -----
-New upstream version for gtk+-2.6.
-
------ version 1.062-1 -----
-New upstream version, built against perl-5.8.6 with a new build script.
-
------ version 1.061-1 -----
-New upstream version; see ChangeLog for details.
-
------ version 1.043-2 -----
-Rebuilt for perl-5.8.5.
-
------ version 1.043-1 -----
-Initial release for Cygwin.
+----- version 1.220-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
