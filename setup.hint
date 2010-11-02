@@ -1,5 +1,5 @@
 category: Perl Gnome
-requires: libatk1.0_0 libcairo2 libgcc1 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk2.0_0 libpango1.0_0 perl perl-Cairo perl-Glib perl-Pango
+requires: libatk1.0_0 libcairo2 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk2.0_0 libpango1.0_0 perl perl-Cairo perl-Glib perl-Pango
 sdesc: "Perl Gtk+ 2.x bindings"
 ldesc: "Perl bindings to the 2.x series of the Gtk+ graphical user 
 interface library.  This module allows you to write graphical user 
