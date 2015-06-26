@@ -1,10 +1,12 @@
 inherit gtk2-perl
 
 NAME="perl-Gtk2"
-VERSION=1.249
+VERSION=1.2495
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Gtk+ 2.x bindings"
 DESCRIPTION="Perl bindings to the 2.x series of the Gtk+ graphical user
 interface library.  This module allows you to write graphical user interfaces
 in a perlish and object-oriented way."
+
+DEPS_EXCLUDE="${PERL_VENDORARCH}/Gtk2/TestHelper.pm"
