@@ -1,7 +1,7 @@
 inherit gtk2-perl
 
 NAME="perl-Gtk2"
-VERSION=1.2495
+VERSION=1.24991
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl Gtk+ 2.x bindings"
